@@ -1,0 +1,233 @@
+:root {
+  --primary-blue: #005293;
+  --primary-yellow: #ffc72c;
+  --background-light: #f2f2f2;
+  --text-color: #222;
+  --font-family: 'Open Sans', sans-serif;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-light);
+  min-height: 100vh;
+}
+
+/* Container centrerar innehåll */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background: white;
+  border-bottom: 4px solid var(--primary-yellow);
+  padding: 0.5rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--primary-blue);
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  background-color: #ccc; /* synlig ruta om bilden saknas */
+}
+
+/* Lämna sidan-knapp */
+.btn-leave {
+  background-color: var(--primary-yellow);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  color: black;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leave:hover {
+  background-color: #e6b800;
+}
+
+/* hem sidan-knapp */
+.btn-hem {
+  background-color: var(--primary-yellow);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  color: black;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.btn-hem:hover {
+  background-color: #e6b800;
+}
+
+/* Navigationslänkar */
+.header-nav a {
+  margin-left: 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+  color: var(--primary-blue);
+}
+
+/* Hero - reservyta utan bild */
+.hero {
+  position: relative;
+  height: 300px;
+  /* Byt bilden i images/ till ett webbvänligt namn (t.ex. hero.jpg) */
+  background-image: url("images/Profilbild.jpeg");
+  /* Skala bilden så hela bilden syns inom hero (kan lämna svart runt om) */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color:var(--primary-blue); /* svart kant om bilden inte fyller hela ytan */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 900px;
+  border-radius: 4px;
+}
+
+/* Huvudinnehåll */
+.main-content h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* Grid för knappar */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button-grid button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.button-grid button:hover {
+  background-color: #003d73;
+}
+
+/* Innehållsruta (bloggliknande) för bakgrundssidan */
+.content-box {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: grid;
+  gap: 1rem;
+}
+
+.content-box .post {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.content-box .post h3 { margin: 0; font-size: 1.1rem; }
+.content-box .post .meta { color: rgba(0,0,0,0.5); font-size: 0.9rem; }
+.content-box .post p { margin: 0; }
+
+.content-box .gallery { display:flex; flex-wrap:wrap; gap:0.5rem; }
+.content-box .gallery img { width:160px; height:110px; object-fit:cover; border-radius:6px; }
+
+/* Dropdown-knappar med pil */
+.btn-dropdown::after {
+  content: ' ▼';
+  float: right;
+}
+
+/* Enkel knapp utan pil */
+.btn-simple {
+  background-color: var(--primary-blue);
+}
+
+/* Style links inside button-grid to look like buttons */
+.button-grid a.btn-simple {
+  display: block;
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+.button-grid a.btn-simple:hover {
+  background-color: #003d73;
+}
+
+/* Responsiv för mobil */
+@media (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+  .header-content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

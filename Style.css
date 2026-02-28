@@ -110,7 +110,7 @@ body {
 /* Hero - reservyta utan bild */
 .hero {
   position: relative;
-  height: clamp(180px,35vhv320px);
+  height: 250px;
   /* Byt bilden i images/ till ett webbvänligt namn (t.ex. hero.jpg) */
   background-image: url("images/Profilbild.jpeg");
   /* Skala bilden så hela bilden syns inom hero (kan lämna svart runt om) */

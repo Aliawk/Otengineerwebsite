@@ -193,6 +193,19 @@ body {
 .content-box .gallery { display:flex; flex-wrap:wrap; gap:0.5rem; }
 .content-box .gallery img { width:160px; height:110px; object-fit:cover; border-radius:6px; }
 
+.content-box .post > img {
+  width: min(650px, 100%);
+  height: auto;
+  margin: 0.5rem auto;   /* centrerar */
+  border-radius: 8px;    /* valfritt */
+  
+  max-height: 320px;         /* <-- gör dem "kortare" */
+  object-fit: contain;       /* ingen beskärning */
+  margin: 0.5rem auto;
+  display: block;
+}
+
+
 /* Dropdown-knappar med pil */
 .btn-dropdown::after {
   content: ' ▼';

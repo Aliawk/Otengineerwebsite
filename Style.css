@@ -110,7 +110,7 @@ body {
 /* Hero - reservyta utan bild */
 .hero {
   position: relative;
-  height: 300px;
+  height: clamp(180px,35vhv320px);
   /* Byt bilden i images/ till ett webbvänligt namn (t.ex. hero.jpg) */
   background-image: url("images/Profilbild.jpeg");
   /* Skala bilden så hela bilden syns inom hero (kan lämna svart runt om) */
@@ -131,7 +131,7 @@ body {
   padding: 1rem 2rem;
   color: white;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
   text-align: center;
   max-width: 900px;
   border-radius: 4px;
@@ -142,7 +142,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3.5vw, 1.3rem);
 }
 
 /* Grid för knappar */
@@ -230,4 +230,11 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
   }
+}
+
+/* Gör bilder responsiva överallt */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

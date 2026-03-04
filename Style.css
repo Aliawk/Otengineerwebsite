@@ -49,6 +49,7 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--primary-blue);
+  background-color: white;
 }
 
 .logo img {

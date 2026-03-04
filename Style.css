@@ -55,7 +55,7 @@ body {
 .logo img {
   height: 40px;
   width: auto;
-  background-color: #ccc; /* synlig ruta om bilden saknas */
+  background-color: white; /* synlig ruta om bilden saknas */
 }
 
 /* Lämna sidan-knapp */

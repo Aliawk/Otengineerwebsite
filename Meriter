@@ -14,6 +14,7 @@
       <div class="logo">
         <a href="#">
         <img src="images/Logga.png" alt="Logga">
+        </a>
       </div>
       <button type="button" class="btn-leave" onclick="location.href='/bakgrund.html'">Bakgrund</button>
       <button type="button" class="btn-leave" onclick="location.href='/Projekt.html'">Mina projekt</button>

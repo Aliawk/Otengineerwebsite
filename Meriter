@@ -28,25 +28,25 @@
   </section>
 
   <main class="main-content container">
-    <h2>Mina referenser</h2>
-      <div class="content-box">
+    <h2>Mina Meriter</h2>
+      <div class="content-links">
         <div class="post">
-          <h3>LinkedIn</h3>
-          <a href="https://www.linkedin.com/in/ali1mansoor/" target="_blank">https://www.linkedin.com/in/ali1mansoor/</a>
-          </a>
+          <h3>Länkar</h3>
+            <div class="ikoner-rad">
+                <a href="https://www.linkedin.com/in/ali1mansoor/">
+                <img src="images/icons8-linkedin-50.svg" alt="LinkedIn" class="linksbuttons">
+                </a>
+            
+                <a href="https://github.com/Aliawk">
+                    <img src="images/icons8-github.svg" alt="Github" class="linksbuttons">
+                </a>
 
-
+                <a href="https://www.credly.com/users/ali-mansoor.f0259066/badges#credly">
+                    <img src="images/icons8-credly.svg" alt="credly" class="linksbuttons">
+                </a>
+            </div>
     </div>
-        <p>Genom åren har jag samlat på mig värdefulla kontakter och referenser som jag kan använda i framtida projekt.</p>
-        <p>Flera av mina kontakter satt in fina rekommendationer på min profil. Här kommer några.</p>
-        <p>-Fd Chef</p>
-        <img src="images/Senad.png" alt="Bild 1" onerror="this.style.display='none'">
-        <p>-Head of Central distribution center, New York/Jersey Volvo Cars.</p>
-        <img src="images/Anthony.png" alt="Bild 1" onerror="this.style.display='none'">
-        <p>-Fd Kollega</p>
-        <img src="images/Chris.png" alt="Bild 1" onerror="this.style.display='none'">
-        <p>-Fd Kollega</p>
-        <img src="images/Simon.png" alt="Bild 1" onerror="this.style.display='none'">
+
       </div>
     </div>
   </main>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digital Portfolio</title>
+  <title>Ali Mansoor</title>
   <link rel="stylesheet" href="Style.css">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
 
@@ -15,11 +15,13 @@
       <div class="logo">
         <img src="images/Logga.png" alt="Logga">
       </div>
+      <a href="#" class="btn-hem">Hem</a>
       <button type="button" class="btn-hem" onclick="location.href='#'">Hem</button>
       <button type="button" class="btn-leave" onclick="location.href='/bakgrund.html'">Bakgrund</button>
       <button type="button" class="btn-leave" onclick="location.href='/Projekt.html'">Mina projekt</button>
       <button type="button" class="btn-leave" onclick="location.href='/Intressen.html'">Intressen</button>
       <button type="button" class="btn-leave" onclick="location.href='/Referenser.html'">Referenser</button>
+      <button type="button" class="btn-leave" onclick="location.href='/Meriter.html'">Meriter</button>
       <button type="button" class="btn-leave" onclick="location.href='https://google.com'">Lämna sidan</button>
     </div>
   </header>
@@ -32,9 +34,9 @@
 
     <main class="main-content container">
       <h2>Introduktion</h2>
-      <div class="card">
-        <h3>Lite om mig</h3>
-        <p>Jag är 26 år gammal. </p>
+
+      <div class="content-box">
+        <p>Jag är <span id="age"></span> år gammal. </p>
         <p>Jag har byggt upp erfarenhet inom operativ säkerhet, produktion, supply chain och management, vilket har gett mig en bred förståelse för både verksamhet och struktur.</p>
         <p>Teknik har varit ett stort intresse för mig sedan barndomen, och det var också det som ledde mig till att börja studera IT-ingenjörsprogrammet på högskolan.</p>
         <p>Jag drivs av att lära mig nya saker och att utvecklas genom nya utmaningar. Därför har jag engagerat mig i olika projekt och tävlingar inom teknik och cybersäkerhet.</p>
@@ -42,5 +44,23 @@
         <p>För mig är en trygg och stark social krets en viktig del av både utveckling och välmående.</p>
       </div>
     </main>
+
+    <script>
+      const birthDate = new Date("1999-07-22");
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    document.getElementById("age").textContent = age;
+    </script>
+
   </body>
   </html>

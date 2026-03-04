@@ -190,9 +190,6 @@ body {
 .content-box .post .meta { color: rgba(0,0,0,0.5); font-size: 0.9rem; }
 .content-box .post p { margin: 0; }
 
-.content-box .gallery { display:flex; flex-wrap:wrap; gap:0.5rem; }
-.content-box .gallery img { width:160px; height:110px; object-fit:cover; border-radius:6px; }
-
 .content-box .post > img {
   width: min(650px, 100%);
   height: auto;
@@ -250,4 +247,42 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.content-links {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: grid;
+  gap: 1rem;
+}
+
+.content-links .post {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.content-links .post h3 { margin: 0; font-size: 1.1rem; }
+.content-links .post .meta { color: rgba(0,0,0,0.5); font-size: 0.9rem; }
+.content-links .post p { margin: 0; }
+
+.linksbuttons {
+  width: 100%;
+  max-width: 50px;
+  height: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease
+}
+
+.linksbuttons:hover {
+  transform: scale(1.05);
+}
+
+.ikoner-rad {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }

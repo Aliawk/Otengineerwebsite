@@ -63,13 +63,13 @@
         <h3>Gym applikation i C# .net</h3>
         <p>Jag och två klasskamrater skapade en applikation i C# .net.</p>
         <p>Appen består av två separata användargränssnitt: i det ena kan personal lägga in pass, hantera utrustning och låna ut träningsartiklar till medlemmar; i det andra kan medlemmar boka pass, se sin historik, sina poäng och antalet förbrända kalorier. Medlemmar kan också söka efter andra medlemmar och se deras poäng.</p>
-        <p>Vi har använt MVVM-strukturen, vilket innebär att presentation (Views), logik (ViewModels) och data (Models) hålls strikt åtskilda genom databindning via INotifyPropertyChanged och ICommand. Lösningen är organiserad i fyra lager:</p>
-        <p>Presentation: två separata WPF-projekt (personal- och besökargränssnitt)</p>
-        <p>Affärslager: controller-klasser för inloggning, medlems­hantering, utrustning och träningspass.</p>
+        <p>Vi har använt MVVM strukturen, vilket innebär att presentation (Views), logik (ViewModels) och data (Models) hålls strikt åtskilda genom databindning via INotifyPropertyChanged och ICommand. Lösningen är organiserad i fyra lager:</p>
+        <p>Presentation: två separata WPF projekt (personal och besökargränssnitt)</p>
+        <p>Affärslager: controller klasser för inloggning, medlems­hantering, utrustning och träningspass.</p>
         <p>Entitetslager: domänklasser som Member, Equipment och TrainingSession</p>
-        <p>Datalager: Entity Framework Code First, kombinerat med LINQ, där vi har implementerat UnitOfWork- och Generic Repository-mönster för alla CRUD-operationer</p>
+        <p>Datalager: Entity Framework Code First, kombinerat med LINQ, där vi har implementerat UnitOfWork och Generic Repository mönster för alla CRUD operationer</p>
         <p>Applikationen har en databas där jag kan logga mina träningspass och se min utveckling över tid.</p>
-        <p>Vi har dokumenterat hela processen i GitHub samt genom UML-diagram: användningsfallsdiagram, domän- och designklassdiagram, systemsekvens- och designsekvensdiagram samt systemoperationskontrakt.</p>
+        <p>Vi har dokumenterat hela processen i GitHub samt genom UML diagram: användningsfallsdiagram, domän och designklassdiagram, systemsekvens och designsekvensdiagram samt systemoperationskontrakt.</p>
         <p>Nedan ser ni bilder på applikationen för medlemmar och hur lösningen ser ut i solution explorer.</p>
         <img src="images/C1.png" alt="Bild 1" onerror="this.style.display='none'">
         <img src="images/C2.png" alt="Bild 1" onerror="this.style.display='none'">

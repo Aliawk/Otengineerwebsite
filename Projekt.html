@@ -32,15 +32,28 @@
     <h2>Mina projekt</h2>
 
     <div class="content-box">
+
+      <div class="post">
+      <h3>Examensarbete inom AI, beslutsstöd och obemannade butiker</h3>
+      <div class="meta">2026-04-08</div>
+      <p>I mitt examensarbete undersöker jag hur ett IT baserat beslutsstödssystem kan utformas för att identifiera och bedöma risksituationer i obemannade butiker. Fokus ligger på hur artificiell intelligens, multimodal data och analysmodeller kan kombineras för att skapa ett system som kan upptäcka avvikande eller misstänksamt beteende i en miljö där traditionell personalövervakning saknas.</p>
+      <p>Arbetet utgår från att risk i en obemannad butik inte kan förstås genom en enskild faktor, utan måste bedömas utifrån flera samtidiga indikatorer. Därför analyserar jag hur olika datakällor, såsom video, passerings och transaktionsdata, kan användas tillsammans för att skapa en mer komplett lägesbild av vad som händer i butiken.</p>
+      <p>En viktig del av arbetet är att undersöka hur AI kan användas för att tolka händelser i videodata, till exempel genom att identifiera personer, följa beteendemönster och beskriva vad som sker i ett besök. Denna information kan därefter fungera som underlag i ett beslutsstödssystem som väger samman flera riskindikatorer och hjälper till att flagga situationer som bör granskas närmare.</p>
+      <p>Jag tittar också på hur multikriteriell analys kan användas för att strukturera riskbedömningen. Det innebär att olika faktorer, såsom sannolikheten för avvikande beteende, kvaliteten i tillgänglig data, ekonomiska konsekvenser och integritetsrisker, kan vägas mot varandra i stället för att systemet bygger på enstaka fasta regler.</p>
+      <p>Eftersom examensarbetet behandlar videoanalys och beteendedetektion är även informationssäkerhet och integritet en viktig del av studien. Därför analyserar jag hur ett sådant system skulle behöva utformas för att ta hänsyn till dataminimering, åtkomstkontroll, säker lagring och relevanta juridiska och etiska krav, särskilt i relation till kameraövervakning och GDPR.</p>
+      <p>Examensarbetet ger mig möjlighet att arbeta tvärdisciplinärt med flera områden inom IT, bland annat systemdesign, AI, dataanalys, beslutslogik, informationssäkerhet och teknisk utvärdering. Målet är inte bara att föreslå en teknisk lösning, utan att analysera hur en sådan lösning kan utformas på ett sätt som är praktiskt relevant, akademiskt motiverat och realistiskt i en verklig butiksmiljö.</p>
+      </div>
+
+
       <div class="post">
         <h3>Dual boot med grub och Apache2 webbserver</h3>
         <div class="meta">2026-02-14</div>
         <p>Allt började med ett växande intresse för Linux, vilket ledde till att jag valde att installera Ubuntu på min dator i en dual boot lösning med GRUB.</p>
-        <p>Som en del av projektet satte jag upp en webbserver i Apache2 och skapade en egen hemsida för att bygga ett digitalt portfolio.</p>
-        <p>För att göra lösningen säkrare valde jag att inte exponera webbservern direkt mot internet. I stället använde jag en Cloudflare Tunnel, vilket innebar att jag kunde publicera tjänsten utan att öppna några portar i mitt hemnätverk.</p>
-        <p>Jag skapade därmed en krypterad tunnel mellan Cloudflare och min server. Cloudflare fungerar i detta fall som en reverse proxy och bidrar med grundläggande DDoS skydd samt trafikfiltrering innan trafiken når Apache servern.</p>
-        <p>Lösningen innebar också att tjänsten kunde exponeras över HTTPS med ett giltigt TLS certifikat, vilket säkerställer krypterad kommunikation mellan klient och server.</p>
-        <p>Det här projektet gav mig praktisk erfarenhet av Linux, nätverk, webbserverkonfiguration och säkrare publicering av tjänster mot internet.</p>
+        <p>Som en del av projektet satte jag först upp en egen webbserver i Apache2 och byggde en personlig hemsida för att skapa ett digitalt portfolio. Det gav mig praktisk erfarenhet av Linux, webbserverkonfiguration, filhantering, nätverk och hur en webbplats faktiskt publiceras och görs tillgänglig.</p>
+        <p>För att göra lösningen säkrare valde jag då att inte exponera webbservern direkt mot internet. I stället använde jag en Cloudflare Tunnel, vilket gjorde det möjligt att publicera tjänsten utan att öppna portar i hemnätverket. På så sätt skapades en krypterad tunnel mellan Cloudflare och min server, där Cloudflare fungerade som reverse proxy med grundläggande DDoS-skydd, trafikfiltrering och HTTPS via giltigt TLS-certifikat.</p>
+        <p>Efter att ha byggt och drivit lösningen på detta sätt insåg jag att hemsidan inte behövde hostas direkt från min Linux-dator. Nästa steg blev därför att modernisera publiceringen genom att flytta den till <strong>Cloudflare Pages</strong>.</p>
+        <p>Hemsidans kod ligger i dag på <strong>GitHub</strong>, och jag har satt upp ett <strong>CI/CD flöde</strong> där ändringar i repot automatiskt byggs och publiceras via Cloudflare Pages. Det innebär att varje uppdatering kan deployas snabbare, mer strukturerat och mer driftsäkert än i den ursprungliga lösningen. Jag gick därmed från en mer manuell, serverbaserad publicering till ett arbetsflöde som liknar modern frontend- och webbutveckling i praktiken.</p>
+        <p>Projektet har gett mig praktisk erfarenhet av flera delar inom IT: Linux, boot-hantering, Apache2, nätverk, reverse proxy, Cloudflare Tunnel, DNS, HTTPS/TLS, GitHub och automatiserad publicering med CI/CD. Det blev också ett tydligt exempel på hur en lösning kan utvecklas från en lokal och mer infrastrukturtung implementation till en mer skalbar och underhållsvänlig molnbaserad leveransmodell.</p>
       </div>
 
       <div class="post">

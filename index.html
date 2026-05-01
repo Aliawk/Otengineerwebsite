@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ali Mansoor</title>
+  <title>Ali Mansoor | Digital portfolio</title>
   <link rel="stylesheet" href="Style.css">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
 </head>
@@ -11,43 +11,91 @@
 
   <header class="site-header">
     <div class="container header-content">
-      <div class="logo">
-        <a href="#">
-        <img src="images/logga.svg" alt="Logga">
-        </a>
-      </div>
-      <button type="button" class="btn-leave" onclick="location.href='/bakgrund.html'">Bakgrund</button>
-      <button type="button" class="btn-leave" onclick="location.href='/Projekt.html'">Mina projekt</button>
-      <button type="button" class="btn-leave" onclick="location.href='/Intressen.html'">Intressen</button>
-      <button type="button" class="btn-leave" onclick="location.href='/Referenser.html'">Referenser</button>
-      <button type="button" class="btn-leave" onclick="location.href='/Meriter.html'">Meriter</button>
-      <button type="button" class="btn-leave" onclick="location.href='https://google.com'">Lämna sidan</button>
+      <a class="logo" href="/index.html" aria-label="Till startsidan">
+        <img src="images/logga.svg" alt="Ali Mansoor logotyp">
+      </a>
+
+      <nav class="site-nav" aria-label="Huvudnavigation">
+        <a href="/bakgrund.html">Bakgrund</a>
+        <a href="/Projekt.html">Projekt</a>
+        <a href="/Intressen.html">Intressen</a>
+        <a href="/Referenser.html">Referenser</a>
+        <a href="/Meriter.html">Meriter</a>
+      </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      Välkommen till min digitala portfolio
+  <section class="hero hero-home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">IT-ingenjör · cybersäkerhet · digital infrastruktur</p>
+        <h1>Ali Mansoor</h1>
+        <p class="hero-lead">
+          Jag bygger praktiska tekniska lösningar med fokus på säkerhet, struktur och verklig nytta.
+        </p>
+        <div class="hero-actions" aria-label="Snabblänkar">
+          <a class="btn-primary" href="/Projekt.html">Se mina projekt</a>
+          <a class="btn-secondary" href="/bakgrund.html">Läs min bakgrund</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait">
+        <img src="images/Profilbild.jpeg" alt="Porträtt av Ali Mansoor">
+      </div>
     </div>
   </section>
 
-    <main class="main-content container">
-      <h2>Introduktion</h2>
+  <main class="main-content container">
+    <section class="intro-section">
+      <div>
+        <p class="section-kicker">Kort om mig</p>
+        <h2>Från operativt ansvar till teknisk problemlösning</h2>
+      </div>
+      <p>
+        Hej! Jag heter Ali och är <span id="age"></span> år gammal. Jag har erfarenhet inom operativ säkerhet,
+        produktion, supply chain och ledarskap, och studerar idag IT-ingenjörsprogrammet med inriktning mot
+        digital infrastruktur och cybersäkerhet.
+      </p>
+    </section>
 
-      <div class="content-box">
-        <div class ="post">
-        <p>Hej! Jag heter Ali och är <span id="age"></span> år gammal. </p>
-        <p>Jag har byggt upp erfarenhet inom operativ säkerhet, produktion, supply chain och management, vilket har gett mig en bred förståelse för både verksamhet och struktur.</p>
+    <section class="highlight-grid" aria-label="Profilområden">
+      <article class="highlight-card">
+        <span class="card-number">01</span>
+        <h3>Cybersäkerhet</h3>
+        <p>Projekt och tävlingar där risk, data, nätverk och informationssäkerhet möts.</p>
+      </article>
+      <article class="highlight-card">
+        <span class="card-number">02</span>
+        <h3>System och drift</h3>
+        <p>Praktisk erfarenhet av Linux, webbserver, Cloudflare, GitHub och automatiserad publicering.</p>
+      </article>
+      <article class="highlight-card">
+        <span class="card-number">03</span>
+        <h3>Ledarskap</h3>
+        <p>Bakgrund som teamleader, klassrepresentant och tränare med fokus på struktur och människor.</p>
+      </article>
+    </section>
+
+    <section class="content-box about-card">
+      <div class="post">
+        <h2>Introduktion</h2>
         <p>Teknik har varit ett stort intresse för mig sedan barndomen, och det var också det som ledde mig till att börja studera IT-ingenjörsprogrammet på högskolan.</p>
         <p>Jag drivs av att lära mig nya saker och att utvecklas genom nya utmaningar. Därför har jag engagerat mig i olika projekt och tävlingar inom teknik och cybersäkerhet.</p>
-        <p>Utöver det är jag en social person som uppskattar att umgås med andra och som sätter stort värde på familj och vänner.</p>
-        <p>För mig är en trygg och stark social krets en viktig del av både utveckling och välmående.</p>
-        <img src="/images/Mycket mindre Ali.jpeg" alt="Bild 1" onerror="this.style.display='none'">
+        <p>Utöver det är jag en social person som uppskattar att umgås med andra och som sätter stort värde på familj och vänner. För mig är en trygg och stark social krets en viktig del av både utveckling och välmående.</p>
       </div>
-    </main>
+      <img src="/images/Mycket mindre Ali.jpeg" alt="Ali Mansoor" onerror="this.style.display='none'">
+    </section>
+  </main>
 
-    <script>
-      const birthDate = new Date("1999-07-22");
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; Ali Mansoor 2026</p>
+      <a href="https://www.linkedin.com/in/ali1mansoor/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const birthDate = new Date("1999-07-22");
     const today = new Date();
 
     let age = today.getFullYear() - birthDate.getFullYear();
@@ -61,7 +109,7 @@
     }
 
     document.getElementById("age").textContent = age;
-    </script>
+  </script>
 
-  </body>
-  </html>
+</body>
+</html>

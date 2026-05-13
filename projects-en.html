@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Projects</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="/index-en.html">
+        <img src="images/logga.svg" alt="Logo">
+        </a>
+      </div>
+      <button type="button" class="btn-leave" onclick="location.href='/experience-en.html'">Experience</button>
+      <button type="button" class="btn-leave" onclick="location.href='#'">Projects</button>
+      <button type="button" class="btn-leave" onclick="location.href='/interests-en.html'">Interests</button>
+      <button type="button" class="btn-leave" onclick="location.href='/references-en.html'">References</button>
+      <button type="button" class="btn-leave" onclick="location.href='/merits-en.html'">Merits</button>
+      <button type="button" class="btn-leave" onclick="location.href='https://google.com'">Leave site</button>
+    </div>
+  </header>
+
+  <section class="hero">
+  </section>
+
+  <main class="main-content container">
+    <h2>My projects</h2>
+
+    <div class="content-box">
+      <div class="post">
+        <h3>Thesis project in AI, decision support and unmanned stores</h3>
+        <div class="meta">2026-04-08</div>
+        <p>My thesis explores how an IT-based decision support system can be designed to identify and assess risk situations in unmanned stores.</p>
+        <p>The work focuses on combining artificial intelligence, multimodal data and analysis models to detect unusual or suspicious behavior in an environment without traditional staff supervision.</p>
+        <p>A central part of the project is studying how video, access data and transaction data can be combined to create a more complete understanding of what happens inside the store.</p>
+        <p>The thesis also considers information security, privacy, access control, secure storage and relevant legal and ethical requirements related to camera surveillance and GDPR.</p>
+      </div>
+
+      <div class="post">
+        <h3>Cybersecurity: network traffic and threat indicator analysis</h3>
+        <div class="meta">Cybersecurity</div>
+        <p>I have worked with recorded network traffic to understand how suspicious activity can be identified in practice. By reviewing PCAP files in Wireshark, I followed communication flows, interpreted protocols, detected unusual behavior and investigated signs of possible data exfiltration.</p>
+        <p>The work combined manual traffic analysis with supporting tools for enriching suspicious artefacts, such as checking indicators and decoding data. It gave me a clearer understanding of how technical traces can be connected to security events and investigated step by step.</p>
+        <div class="skill-tags project-tags" aria-label="Tools and methods">
+          <span>Wireshark</span>
+          <span>PCAP</span>
+          <span>VirusTotal</span>
+          <span>CyberChef</span>
+          <span>Threat Analysis</span>
+        </div>
+      </div>
+
+      <div class="post">
+        <h3>Dual boot with GRUB and Apache2 web server</h3>
+        <div class="meta">2026-02-14</div>
+        <p>A growing interest in Linux led me to install Ubuntu on my computer in a dual boot setup using GRUB.</p>
+        <p>As part of the project, I set up my own Apache2 web server and built a personal portfolio site. This gave me practical experience with Linux, web server configuration, file management, networking and publishing a website.</p>
+        <p>To make the solution more secure, I used a Cloudflare Tunnel instead of exposing the server directly to the internet. Later, I moved the site to Cloudflare Pages and connected it to GitHub for a more modern CI/CD-based publishing workflow.</p>
+      </div>
+
+      <div class="post">
+        <h3>Home Assistant integrated home</h3>
+        <p>I installed Home Assistant on a Raspberry Pi and used an iPad as a fixed control panel at home.</p>
+        <p>The setup included smart lighting, humidity monitoring, sensors, traffic camera integrations through APIs and a shared digital overview for schedules and public transport.</p>
+        <p>The project gave me a stronger understanding of how smart home automation can solve practical everyday problems.</p>
+        <img src="images/HA 1.jpeg" alt="Home Assistant dashboard" onerror="this.style.display='none'">
+        <img src="images/HA 2.jpeg" alt="Home Assistant setup" onerror="this.style.display='none'">
+        <img src="images/HA 3.jpeg" alt="Home Assistant automation" onerror="this.style.display='none'">
+      </div>
+
+      <div class="post">
+        <h3>Gym application in C# .NET</h3>
+        <p>Together with two classmates, I built a C# .NET application with separate interfaces for staff and members.</p>
+        <p>The staff interface handled classes, equipment and lending of training items. The member interface allowed users to book sessions, view history, points and calories burned, and search for other members.</p>
+        <p>We used the MVVM structure with separate layers for presentation, business logic, entities and data access, including Entity Framework Code First, LINQ, Unit of Work and Generic Repository patterns.</p>
+        <img src="images/C1.png" alt="Gym application screenshot" onerror="this.style.display='none'">
+        <img src="images/C2.png" alt="Gym application screenshot" onerror="this.style.display='none'">
+        <img src="images/C3.png" alt="Gym application screenshot" onerror="this.style.display='none'">
+        <img src="images/C4.png" alt="Gym application screenshot" onerror="this.style.display='none'">
+        <img src="images/C5.png" alt="Gym application screenshot" onerror="this.style.display='none'">
+      </div>
+
+      <div class="post">
+        <h3>Semi-finalist in CyberChallenge 2025</h3>
+        <p>I participated in CyberChallenge 2025 and reached the semi-final together with my group.</p>
+        <p>The competition involved challenges in cybersecurity, web security and national security, and gave me the opportunity to test my skills and learn from experienced professionals in the field.</p>
+        <img src="images/Cyber.png" alt="CyberChallenge 2025" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </main>
+
+  <footer class="container">
+    <p>&copy; Ali Mansoor 2026</p>
+  </footer>
+
+</body>
+</html>

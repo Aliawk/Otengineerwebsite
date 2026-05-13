@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ali Mansoor | Digital Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="/index-en.html">
+        <img src="images/logga.svg" alt="Ali Mansoor logo">
+        </a>
+      </div>
+      <button type="button" class="btn-leave" onclick="location.href='/experience-en.html'">Experience</button>
+      <button type="button" class="btn-leave" onclick="location.href='/projects-en.html'">Projects</button>
+      <button type="button" class="btn-leave" onclick="location.href='/interests-en.html'">Interests</button>
+      <button type="button" class="btn-leave" onclick="location.href='/references-en.html'">References</button>
+      <button type="button" class="btn-leave" onclick="location.href='/merits-en.html'">Merits</button>
+      <button type="button" class="btn-leave" onclick="location.href='https://google.com'">Leave site</button>
+      <div class="language-switch" aria-label="Choose language">
+        <a class="language-link" href="/index.html" aria-label="Svenska">SE</a>
+        <a class="language-link active" href="/index-en.html" aria-label="English">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero hero-home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">IT engineer · cybersecurity · digital infrastructure</p>
+        <h1>Ali Mansoor</h1>
+        <p class="hero-lead">
+          I build practical technical solutions with a focus on security, structure and real-world value.
+        </p>
+        <div class="hero-actions" aria-label="Quick links">
+          <a class="btn-primary" href="/projects-en.html">View my projects</a>
+          <a class="btn-secondary" href="/experience-en.html">Read my experience</a>
+        </div>
+      </div>
+
+      <div class="hero-portrait">
+        <img src="images/Profilbild.jpeg" alt="Portrait of Ali Mansoor">
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content container">
+    <section class="intro-section">
+      <div>
+        <p class="section-kicker">About me</p>
+        <h2>From operational responsibility to technical problem solving</h2>
+      </div>
+      <p>
+        Hi, my name is Ali and I am <span id="age"></span> years old. I have experience in operational security,
+        production, supply chain and leadership, and I am currently studying IT engineering with a focus on
+        digital infrastructure and cybersecurity.
+      </p>
+    </section>
+
+    <section class="highlight-grid" aria-label="Profile areas">
+      <article class="highlight-card">
+        <span class="card-number">01</span>
+        <h3>Cybersecurity</h3>
+        <p>Projects and competitions where risk, data, networks and information security meet.</p>
+      </article>
+      <article class="highlight-card">
+        <span class="card-number">02</span>
+        <h3>Systems and operations</h3>
+        <p>Hands-on experience with Linux, web servers, Cloudflare, GitHub and automated publishing.</p>
+      </article>
+      <article class="highlight-card">
+        <span class="card-number">03</span>
+        <h3>Leadership</h3>
+        <p>Experience as a team leader, class representative and coach, with a focus on structure and people.</p>
+      </article>
+    </section>
+
+    <section class="content-box about-card">
+      <div class="post">
+        <h2>Introduction</h2>
+        <p>Technology has been a major interest of mine since childhood, and it eventually led me to study IT engineering at university.</p>
+        <p>I am driven by learning new things and developing through new challenges. That is why I have engaged in projects and competitions within technology and cybersecurity.</p>
+        <p>I am also a social person who values family, friends and a strong support network. For me, a safe and positive social circle is important for both growth and well-being.</p>
+      </div>
+      <img src="/images/Mycket mindre Ali.jpeg" alt="Ali Mansoor" onerror="this.style.display='none'">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; Ali Mansoor 2026</p>
+      <a href="https://www.linkedin.com/in/ali1mansoor/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script>
+    const birthDate = new Date("1999-07-22");
+    const today = new Date();
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age--;
+    }
+
+    document.getElementById("age").textContent = age;
+  </script>
+
+</body>
+</html>

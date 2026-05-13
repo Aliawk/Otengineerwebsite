@@ -250,6 +250,15 @@ a {
   font-size: 1.06rem;
 }
 
+.experience-intro {
+  grid-template-columns: 1fr;
+  max-width: 920px;
+}
+
+.experience-intro h2 {
+  max-width: 920px;
+}
+
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

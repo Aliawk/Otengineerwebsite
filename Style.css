@@ -398,6 +398,10 @@ a {
   font-weight: 750;
 }
 
+.project-tags {
+  margin-top: 0.25rem;
+}
+
 .merit-links {
   margin-top: 1rem;
 }

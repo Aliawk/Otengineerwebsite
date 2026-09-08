@@ -681,8 +681,13 @@ footer.container {
 
   .intro-section h2,
   .main-content h2 {
-    font-size: clamp(1.65rem, 10vw, 2.35rem);
-    line-height: 1.16;
+    font-size: clamp(1.45rem, 7.2vw, 1.95rem);
+    line-height: 1.22;
+  }
+
+  .experience-intro h2 {
+    font-size: clamp(1.35rem, 6.4vw, 1.8rem);
+    line-height: 1.24;
   }
 
   .highlight-grid,
@@ -749,6 +754,10 @@ footer.container {
 
   .intro-section h2,
   .main-content h2 {
-    font-size: 1.55rem;
+    font-size: 1.38rem;
+  }
+
+  .experience-intro h2 {
+    font-size: 1.3rem;
   }
 }

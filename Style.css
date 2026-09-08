@@ -31,6 +31,8 @@ body {
     linear-gradient(315deg, rgba(242, 184, 75, 0.15), transparent 32%),
     var(--surface-soft);
   line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -41,6 +43,7 @@ img {
 
 a {
   color: inherit;
+  overflow-wrap: anywhere;
 }
 
 .container {
@@ -61,14 +64,16 @@ a {
   min-height: 76px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  margin-right: auto;
 }
 
 .logo img {
@@ -99,7 +104,8 @@ a {
   border-radius: 999px;
   background: transparent;
   color: var(--ink);
-  font: 700 0.92rem/1 var(--font-family);
+  font: 700 0.92rem/1.15 var(--font-family);
+  text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -144,7 +150,7 @@ a {
 }
 
 .hero {
-  margin: 1.25rem auto 0;
+  margin: 0;
   min-height: 260px;
   display: grid;
   align-items: center;
@@ -269,8 +275,9 @@ a {
 .main-content h2 {
   max-width: 760px;
   font-size: clamp(1.8rem, 4vw, 3rem);
-  line-height: 1.08;
+  line-height: 1.14;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .intro-section p {
@@ -295,7 +302,7 @@ a {
 }
 
 .highlight-card {
-  min-height: 210px;
+  min-height: 0;
   padding: 1.2rem;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -378,16 +385,16 @@ a {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin: 1.5rem 0;
 }
 
 .skill-card {
-  min-height: 230px;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1.2rem;
   padding: clamp(1.1rem, 2.4vw, 1.6rem);
   border: 1px solid var(--line);
@@ -397,8 +404,8 @@ a {
 }
 
 .skill-card-wide {
-  grid-column: 1 / -1;
-  min-height: 190px;
+  grid-column: auto;
+  min-height: 0;
 }
 
 .skill-label {
@@ -425,6 +432,8 @@ a {
 .skill-tags span {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  max-width: 100%;
   min-height: 34px;
   padding: 0.45rem 0.7rem;
   border: 1px solid rgba(36, 118, 107, 0.20);
@@ -433,6 +442,9 @@ a {
   color: var(--forest);
   font-size: 0.92rem;
   font-weight: 750;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 
 .project-tags {
@@ -521,8 +533,10 @@ footer.container {
 
 @media (max-width: 860px) {
   .header-content {
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0.75rem 0;
+    gap: 0.45rem;
   }
 
   .site-nav,
@@ -532,6 +546,7 @@ footer.container {
 
   .hero-home {
     min-height: auto;
+    padding: clamp(2rem, 9vw, 3.5rem) 0;
   }
 
   .hero-grid,
@@ -541,7 +556,8 @@ footer.container {
   }
 
   .hero-portrait {
-    min-height: 320px;
+    min-height: 0;
+    max-height: 360px;
   }
 
   .highlight-grid {
@@ -549,7 +565,7 @@ footer.container {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .skill-card-wide {
@@ -562,24 +578,177 @@ footer.container {
     width: min(100% - 24px, 1120px);
   }
 
+  body {
+    line-height: 1.55;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .header-content {
+    min-height: 0;
+    padding: 0.6rem 0 0.75rem;
+  }
+
+  .logo {
+    width: 100%;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
   .site-nav a,
   .header-nav a,
   .btn-leave,
   .btn-hem {
-    min-height: 36px;
-    padding: 0.5rem 0.7rem;
-    font-size: 0.84rem;
+    flex: 1 1 calc(50% - 0.45rem);
+    min-height: 34px;
+    padding: 0.48rem 0.62rem;
+    font-size: 0.8rem;
+  }
+
+  .language-switch {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 0.2rem;
+  }
+
+  .language-link {
+    width: 38px;
+    height: 38px;
+    font-size: 0.86rem;
   }
 
   .button-grid {
     grid-template-columns: 1fr;
   }
 
+  .hero {
+    min-height: 170px;
+  }
+
+  .hero-home {
+    background-position: center top;
+  }
+
+  .hero-grid {
+    gap: 1.35rem;
+  }
+
   .hero h1 {
-    font-size: clamp(2.6rem, 18vw, 4rem);
+    font-size: clamp(2.45rem, 15vw, 3.7rem);
+    line-height: 1;
+  }
+
+  .eyebrow,
+  .section-kicker {
+    font-size: 0.72rem;
+  }
+
+  .hero-lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    gap: 0.55rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    min-height: 42px;
+    padding: 0.7rem 0.9rem;
+  }
+
+  .hero-portrait {
+    max-height: 300px;
+  }
+
+  .main-content {
+    padding: 1.6rem 0 2.4rem;
+  }
+
+  .intro-section {
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro-section h2,
+  .main-content h2 {
+    font-size: clamp(1.65rem, 10vw, 2.35rem);
+    line-height: 1.16;
+  }
+
+  .highlight-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+
+  .highlight-card,
+  .skill-card,
+  .content-box,
+  .content-links {
+    padding: 1rem;
+    box-shadow: 0 8px 26px rgba(22, 32, 42, 0.08);
+  }
+
+  .card-number {
+    margin-bottom: 1rem;
+  }
+
+  .skill-card {
+    gap: 0.85rem;
+  }
+
+  .skill-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .skill-tags {
+    gap: 0.4rem;
+  }
+
+  .skill-tags span {
+    min-height: 30px;
+    padding: 0.35rem 0.55rem;
+    font-size: 0.82rem;
+  }
+
+  .content-box > img,
+  .content-box .post > img {
+    max-height: 420px;
   }
 
   .footer-content {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: min(100% - 18px, 1120px);
+  }
+
+  .btn-leave,
+  .btn-hem {
+    font-size: 0.76rem;
+    padding-inline: 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .intro-section h2,
+  .main-content h2 {
+    font-size: 1.55rem;
   }
 }

@@ -42,20 +42,14 @@
       <p>Jag tittar också på hur multikriteriell analys kan användas för att strukturera riskbedömningen. Det innebär att olika faktorer, såsom sannolikheten för avvikande beteende, kvaliteten i tillgänglig data, ekonomiska konsekvenser och integritetsrisker, kan vägas mot varandra i stället för att systemet bygger på enstaka fasta regler.</p>
       <p>Eftersom examensarbetet behandlar videoanalys och beteendedetektion är även informationssäkerhet och integritet en viktig del av studien. Därför analyserar jag hur ett sådant system skulle behöva utformas för att ta hänsyn till dataminimering, åtkomstkontroll, säker lagring och relevanta juridiska och etiska krav, särskilt i relation till kameraövervakning och GDPR.</p>
       <p>Examensarbetet ger mig möjlighet att arbeta tvärdisciplinärt med flera områden inom IT, bland annat systemdesign, AI, dataanalys, beslutslogik, informationssäkerhet och teknisk utvärdering. Målet är inte bara att föreslå en teknisk lösning, utan att analysera hur en sådan lösning kan utformas på ett sätt som är praktiskt relevant, akademiskt motiverat och realistiskt i en verklig butiksmiljö.</p>
-      </div>
-
-      <div class="post">
-        <h3>Cybersäkerhet: analys av nätverkstrafik och hotindikatorer</h3>
-        <div class="meta">Cybersecurity</div>
-        <p>Jag har arbetat med analys av inspelad nätverkstrafik för att förstå hur misstänkt aktivitet kan identifieras i praktiken. Genom att gå igenom PCAP-filer i Wireshark kunde jag följa kommunikationsflöden, tolka protokoll, upptäcka avvikande beteenden och undersöka tecken på exempelvis dataexfiltration.</p>
-        <p>Arbetet kombinerade manuell trafikanalys med kompletterande verktyg för att berika misstänkta artefakter, exempelvis kontroll av indikatorer och dekodning av data. Det gav mig en tydligare förståelse för hur tekniska spår kan kopplas till säkerhetshändelser och hur incidenter kan analyseras steg för steg.</p>
         <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
-          <span>Wireshark</span>
-          <span>PCAP</span>
-          <span>VirusTotal</span>
-          <span>CyberChef</span>
-          <span>Threat Analysis</span>
-        </div>
+          <span>Containers</span>
+          <span>Kubernetes</span>
+          <span>Python</span>
+          <span>JavaScript</span>
+          <span>CI/CD</span>
+          <span>AI</span>
+          </div>
       </div>
 
       <div class="post">
@@ -67,10 +61,19 @@
         <p>Efter att ha byggt och drivit lösningen på detta sätt insåg jag att hemsidan inte behövde hostas direkt från min Linux-dator. Nästa steg blev därför att modernisera publiceringen genom att flytta den till <strong>Cloudflare Pages</strong>.</p>
         <p>Hemsidans kod ligger i dag på <strong>GitHub</strong>, och jag har satt upp ett <strong>CI/CD flöde</strong> där ändringar i repot automatiskt byggs och publiceras via Cloudflare Pages. Det innebär att varje uppdatering kan deployas snabbare, mer strukturerat och mer driftsäkert än i den ursprungliga lösningen. Jag gick därmed från en mer manuell, serverbaserad publicering till ett arbetsflöde som liknar modern frontend- och webbutveckling i praktiken.</p>
         <p>Projektet har gett mig praktisk erfarenhet av flera delar inom IT: Linux, boot-hantering, Apache2, nätverk, reverse proxy, Cloudflare Tunnel, DNS, HTTPS/TLS, GitHub och automatiserad publicering med CI/CD. Det blev också ett tydligt exempel på hur en lösning kan utvecklas från en lokal och mer infrastrukturtung implementation till en mer skalbar och underhållsvänlig molnbaserad leveransmodell.</p>
+        <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
+          <span>Ubuntu</span>
+          <span>Cloudflare</span>
+          <span>Cloud hosting</span>
+          <span>CI/CD</span>
+          <span>GITHUB</span>
+          <span>Dual-boot</span>
+          </div>
       </div>
 
       <div class="post">
         <h3>Home assistant integrerat hem.</h3>
+        <div class="meta">2026-01</div>
         <p>Jag hade en iPad hemma som jag ville använda som en fast display för att förenkla vardagen med hjälp av tekniska lösningar.</p>
         <p>Därför valde jag att installera Home Assistant på en Raspberry Pi och integrera den med iPaden som kontrollpanel i hemmet.</p>
         <p>Under den torra vintern märkte jag att jag fick mer näsblod än vanligt, vilket gjorde att jag började undersöka hur jag kunde använda smarta hem lösningar för att förbättra inomhusmiljön.</p>
@@ -83,10 +86,18 @@
         <img src="images/HA 1.jpeg" alt="Bild 1" onerror="this.style.display='none'">
         <img src="images/HA 2.jpeg" alt="Bild 1" onerror="this.style.display='none'">
         <img src="images/HA 3.jpeg" alt="Bild 1" onerror="this.style.display='none'">
+        <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
+          <span>Raspberry Pi</span>
+          <span>Home Assistant</span>
+          <span>IoT enheter</span>
+          <span>Automation</span>
+          <span>IT-Säkerhet</span>
+        </div>
       </div>
 
       <div class="post">
         <h3>Gym applikation i C# .NET</h3>
+        <div class="meta">2025</div>
         <p>Jag och två klasskamrater skapade en applikation i C# .net.</p>
         <p>Appen består av två separata användargränssnitt: i det ena kan personal lägga in pass, hantera utrustning och låna ut träningsartiklar till medlemmar; i det andra kan medlemmar boka pass, se sin historik, sina poäng och antalet förbrända kalorier. Medlemmar kan också söka efter andra medlemmar och se deras poäng.</p>
         <p>Vi har använt MVVM strukturen, vilket innebär att presentation (Views), logik (ViewModels) och data (Models) hålls strikt åtskilda genom databindning via INotifyPropertyChanged och ICommand. Lösningen är organiserad i fyra lager:</p>
@@ -102,16 +113,43 @@
         <img src="images/C3.png" alt="Bild 1" onerror="this.style.display='none'">
         <img src="images/C4.png" alt="Bild 1" onerror="this.style.display='none'">
         <img src="images/C5.png" alt="Bild 1" onerror="this.style.display='none'">
+        <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
+          <span>C# .Net</span>
+          <span>Mjukvaru Utveckling</span>
+          <span>Backend</span>
+          <span>MySQL</span>
+          <span>CI/CD</span>
+        </div>
+      </div>
+
+      <div class="post">
+        <h3>Cybersäkerhet: analys av nätverkstrafik och hotindikatorer</h3>
+        <div class="meta">2025</div>
+        <p>Jag har arbetat med analys av inspelad nätverkstrafik för att förstå hur misstänkt aktivitet kan identifieras i praktiken. Genom att gå igenom PCAP-filer i Wireshark kunde jag följa kommunikationsflöden, tolka protokoll, upptäcka avvikande beteenden och undersöka tecken på exempelvis dataexfiltration.</p>
+        <p>Arbetet kombinerade manuell trafikanalys med kompletterande verktyg för att berika misstänkta artefakter, exempelvis kontroll av indikatorer och dekodning av data. Det gav mig en tydligare förståelse för hur tekniska spår kan kopplas till säkerhetshändelser och hur incidenter kan analyseras steg för steg.</p>
+        <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
+          <span>Wireshark</span>
+          <span>PCAP</span>
+          <span>VirusTotal</span>
+          <span>CyberChef</span>
+          <span>Threat Analysis</span>
+        </div>
       </div>
 
       <div class="post"></div>
-        <h3>Semi Finalist i Cyberchallange 2025</h3>
+        <h3>Semi Finalist i Cyberchallange</h3>
+        <div class="meta">2025</div>
         <p>Jag deltog i Cyberchallange 2025 och lyckades ta mig till semifinalen.</p>
         <p>Min Grupp skickade in vårat projekt till tävlingen genom högskolan och gick vidare till att få tävla i Försvarshögskan i Stockholm!</p>
         <p>Cyberchallange är en tävling där deltagare får lösa olika utmaningar inom cybersäkerhet, webbsäkerhet och nationellsäkerhet.</p>
         <p>Under tävlingen fick jag möjlighet att testa mina färdigheter och lära mig nya tekniker inom cybersäkerhet. </p>
         <p>Jag fick även träffa väldigt kompetenta personer inom cybersäkerhet och få inspiration från deras erfarenheter. Som t.ex. CISO för Swedbank.</p>
         <img src="images/Cyber.png" alt="Bild 1" onerror="this.style.display='none'">
+        <div class="skill-tags project-tags" aria-label="Verktyg och metoder">
+          <span>NIS2</span>
+          <span>ISO 27001</span>
+          <span>Incidenthantering</span>
+        </div>
       </div>
 
 
